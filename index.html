@@ -1,21 +1,283 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>PUNIT'S FIRST WEBSITE </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PUNIT'S FIRST WEBSITE</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff,
+                #7b2ff7
+            );
+
+            color: white;
+            padding: 30px;
+        }
+
+        /* Main Container */
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+
+            background: rgba(255, 255, 255, 0.15);
+
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,0.3);
+        }
+
+
+        /* Heading */
+
+        h1 {
+            text-align: center;
+
+            font-size: 42px;
+
+            color: #fff;
+
+            text-shadow:
+                0 0 10px #00ffff,
+                0 0 20px #00ffff;
+
+            margin-bottom: 15px;
+        }
+
+
+        .line {
+            width: 350px;
+            max-width: 80%;
+
+            height: 5px;
+
+            background: linear-gradient(
+                90deg,
+                #00ffff,
+                #ffffff,
+                #00ffff
+            );
+
+            margin: 0 auto 45px;
+
+            border-radius: 10px;
+        }
+
+
+        /* Section Heading */
+
+        h2 {
+            font-size: 27px;
+
+            color: #ffff00;
+
+            margin-bottom: 25px;
+
+            text-shadow: 2px 2px 5px black;
+        }
+
+
+        /* Link List */
+
+        ul {
+            list-style: none;
+        }
+
+
+        li {
+            margin: 18px 0;
+        }
+
+
+        /* Link Cards */
+
+        li a {
+            display: block;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            padding: 15px 20px;
+
+            background: rgba(255,255,255,0.12);
+
+            border: 1px solid rgba(255,255,255,0.3);
+
+            border-radius: 12px;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+
+        /* Hover Effect */
+
+        li a:hover {
+
+            transform: translateX(12px) scale(1.02);
+
+            background: rgba(255,255,255,0.3);
+
+            color: #ffff00;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.3);
+        }
+
+
+        /* Emoji before links */
+
+        li:nth-child(1) a::before {
+            content: "🎬 ";
+        }
+
+        li:nth-child(2) a::before {
+            content: "📸 ";
+        }
+
+        li:nth-child(3) a::before {
+            content: "🔥 ";
+        }
+
+        li:nth-child(4) a::before {
+            content: "📚 ";
+        }
+
+        li:nth-child(5) a::before {
+            content: "🌐 ";
+        }
+
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+
+            margin-top: 40px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid rgba(255,255,255,0.3);
+
+            color: #eee;
+
+            font-size: 15px;
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 25px 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            li a {
+                font-size: 17px;
+            }
+        }
+
+    </style>
 </head>
-<body Link="green" Alink="red" Vlink="GREEN" bgcolor="litegreen">
-<center>
-<h1>
-<FONT COLOR="maroon"> PUNIT'S FIRST WEBSITE </FONT>
-</h1>
-<hr width=" 25%" size="5" color="black">
-</center>
-<FONT COLOR ="purple" SIZE="5">
-<h4>LINKS ARE HERE; </h4> 
-<UL>
-<LI><A HREF="https://youtube.com/shorts/M7r2fvm_WNw?si=YaX7Dbnvw2-oI62j">A MOTIVATIONAL SHORTS </A></LI>
-<LI><A HREF="https://www.instagram.com/mr.deepa_k_ydu63?stkn=MXRxNWNkeDlmeHptdA==">INSTA I'D(DEEPAK YADAV)</A></LI>
-<LI><A HREF="https://youtu.be/Hg3sxWq4A_0?si=yhagfGLba1rKs0Qm">MANIAC</A></LI>
-<LI><A HREF="https://ssmpakkibag.com/Student-Login">CLASS 12TH FEE (DEEPAK YADAV)</A></LI>
-<LI><A HREF="https://youtu.be/DEnWOKQ4KW8?si=0QLqym6R6h7ZeeoQ">NAIN TERE </A></LI>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>SOME IMPORTANT THINGS</h1>
+
+        <div class="line"></div>
+
+
+        <h2>🔗 LINKS ARE HERE;</h2>
+
+
+        <ul>
+
+            <li>
+                <a href="#" target="_blank">
+                    A MOTIVATIONAL SHORTS
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" target="_blank">
+                    INSTA ID (DEEPAK YADAV)
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" target="_blank">
+                    MANIAC
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" target="_blank">
+                    CLASS 12TH FEE (DEEPAK YADAV)
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" target="_blank">
+                    NAIN TERE
+                </a>
+            </li>
+
+        </ul>
+
+
+        <footer>
+            © 2026 PUNIT'S FIRST WEBSITE
+        </footer>
+
+    </div>
+
 </body>
 </html>
